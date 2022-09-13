@@ -1,7 +1,7 @@
 <?php
 /**
 Plugin Name: Plugin Test
-Plugin URI: https://chinhwp.com/
+Plugin URI: https://github.com/tranthanhchinh/plugin-test
 Description: Viewer List Images Post
 Author: Thanh Chinh
 Version: 6.1.2
