@@ -9,7 +9,7 @@ Author URI: https://chinhwp.com/
  */
 
     include_once plugin_dir_path(__FILE__) . '/PDUpdater.php';
-    $updater = new PDUpdater(__FILE__);
+    $updater = new Smashing_Updater(__FILE__);
     $updater->set_username('tranthanhchinh');
     $updater->set_repository('plugin-test');
     $updater->authorize('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');
