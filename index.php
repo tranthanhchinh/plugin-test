@@ -4,7 +4,7 @@ Plugin Name: Plugin Test
 Plugin URI: https://chinhwp.com/
 Description: Viewer List Images Post
 Author: Thanh Chinh
-Version: 6.0.0
+Version: 6.1.0
 Author URI: https://chinhwp.com/
  */
 
