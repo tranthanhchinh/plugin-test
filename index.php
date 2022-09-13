@@ -9,13 +9,19 @@ Author URI: https://chinhwp.com/
 GitHub Plugin URI: https://github.com/tranthanhchinh/plugin-test
 GitHub Branch: master
  */
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+    'https://github.com/tranthanhchinh/plugin-test.git',
+    __FILE__,
+    'TestPlugin'
+);
 
-    include_once plugin_dir_path(__FILE__) . '/PDUpdater.php';
-    $updater = new Smashing_Updater(__FILE__);
-    $updater->set_username('tranthanhchinh');
-    $updater->set_repository('plugin-test');
-    $updater->authorize('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');
-    $updater->initialize();
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
+
+//Optional: If you're using a private repository, specify the access token like this:
+$myUpdateChecker->setAuthentication('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');
+
 
 
 add_filter('plugin_action_links_'.plugin_basename(__FILE__), 'salcode_add_plugin_page_settings_link');
