@@ -1,7 +1,7 @@
 <?php
 /**
 Plugin Name: Plugin Test
-Plugin URI: https://github.com/tranthanhchinh/plugin-test
+Plugin URI: https://github.com/tranthanhchinh/plugin-test.git
 Description: Viewer List Images Post
 Author: Thanh Chinh
 Version: 6.1.2
@@ -10,7 +10,7 @@ Author URI: https://chinhwp.com/
  */
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://github.com/tranthanhchinh/plugin-test',
+    'https://github.com/tranthanhchinh/plugin-test.git',
     __FILE__,
     'TestPlugin'
 );
