@@ -6,8 +6,7 @@ Description: Viewer List Images Post
 Author: Thanh Chinh
 Version: 6.1.2
 Author URI: https://chinhwp.com/
-GitHub Plugin URI: https://github.com/tranthanhchinh/plugin-test
-GitHub Branch: master
+
  */
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
@@ -20,7 +19,7 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 $myUpdateChecker->setBranch('main');
 
 //Optional: If you're using a private repository, specify the access token like this:
-$myUpdateChecker->setAuthentication('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');
+$myUpdateChecker->setAuthentication('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');
 
 
 
