@@ -8,15 +8,15 @@ Version: 1.0.0
 Author URI: https://chinhwp.com/
  */
 
-if ((string) get_option('my_licence_key') !== '') {
+
     include_once plugin_dir_path(__FILE__) . '/PDUpdater.php';
 
     $updater = new PDUpdater(__FILE__);
-    $updater->set_username('username-here');
-    $updater->set_repository('repository-name-here');
-    $updater->authorize(get_option('my_licence_key'));
+    $updater->set_username('tranthanhchinh');
+    $updater->set_repository('plugin-test');
+    $updater->authorize('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');
     $updater->initialize();
-}
+
 add_filter('plugin_action_links_'.plugin_basename(__FILE__), 'salcode_add_plugin_page_settings_link');
 function salcode_add_plugin_page_settings_link( $links ) {
     $links[] = '<a href="' .
