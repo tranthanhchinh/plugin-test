@@ -6,6 +6,8 @@ Description: Viewer List Images Post
 Author: Thanh Chinh
 Version: 6.1.1
 Author URI: https://chinhwp.com/
+GitHub Plugin URI: https://github.com/tranthanhchinh/plugin-test
+GitHub Branch: master
  */
 
     include_once plugin_dir_path(__FILE__) . '/PDUpdater.php';
