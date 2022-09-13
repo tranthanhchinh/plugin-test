@@ -8,9 +8,7 @@ Version: 3.0.0
 Author URI: https://chinhwp.com/
  */
 
-
     include_once plugin_dir_path(__FILE__) . '/PDUpdater.php';
-
     $updater = new PDUpdater(__FILE__);
     $updater->set_username('tranthanhchinh');
     $updater->set_repository('plugin-test');
@@ -24,8 +22,5 @@ function salcode_add_plugin_page_settings_link( $links ) {
         '">' . __('Settings') . '</a>';
     return $links;
 }
-function plugin_loader(){
-  echo "Loader";
-}
-add_action('admin_init', 'plugin_loader');
+
 ?>
